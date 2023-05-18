@@ -1,0 +1,67 @@
+body {
+  min-height: calc(100vh - 100px);
+  margin: 0;
+  background: url(https://audreyhossepian.fr/img/logo.png),
+    linear-gradient(40deg, #fc466b, #3f5efb);
+  background-position: 95% 90%;
+  background-repeat: no-repeat;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 50px;
+  color: white;
+}
+
+.hide{
+  display: none !important;
+}
+
+input {
+  padding: 16px;
+  margin: 0;
+}
+input[type="text"] {
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+input[type="button"] {
+  margin-left: -5px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  padding: 14px 15px;
+  cursor: pointer;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+input[type="button"]:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+#popup{
+  width:100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  position :fixed;
+  top:0;
+  left:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#popup form {
+  background-color: white;
+padding:20px
+}
+#popup input[type="text"] {
+  border: 2px solid #fc466b;
+border-right: 0;
+  padding: 14px;
+}
+#popup input[type="button"] {
+  border: 2px solid #fc466b;
+  color: black;
+}
+#popup span {
+  cursor: pointer;
+}

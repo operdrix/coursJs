@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+    <section>
+        <h1><i class="fas fa-tasks"></i> Todo Liste</h1>
+
+        <!-- Liste de tâches -->
+        <section id="todo">
+            <ul></ul>
+        </section>
+
+        <!-- Détails d'une tâche en particulier -->
+        <aside id="task-details" class="hide">
+            <h3></h3>
+            <p></p>
+            <a href="#">Editer cette tâche</a>
+        </aside>
+
+        <nav>
+            <ul class="menu">
+                <li><button id="add-task" title="Ajouter une tâche"><i class="fa fa-plus"></i></button></li>
+                <li><button id="clear-todo" title="Effacer les tâches"><i class="fa fa-trash"></i></button>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+    <!-- Le formulaire de saisie de tâche ne s'affiche pas au démarrage -->
+    <form id="task-form" class="hide standard-form" data-mode="add">
+        <hr>
+        <ul>
+            <li>
+                <label for="lvl">Niveau d'accomplissement :</label>
+                <select id="lvl" name="lvl">
+                    <option value="0">Pas commencé</option>
+                    <option value="25">25% - Commencé</option>
+                    <option value="50">50% - En cours</option>
+                    <option value="75">75% - En cours</option>
+                    <option value="100">100% - Terminé</option>
+                </select>
+            </li>
+            <li>
+                <label for="name">Nom de la tâche :</label>
+                <input id="name" type="text" name="name">
+            </li>
+            <li>
+                <label for="description">Description de la tâche :</label>
+                <textarea name="description" id="description" cols="30" rows="10"></textarea>
+            </li>
+            <li>
+                <input type="submit" id="save" value="Enregistrer">
+            </li>
+        </ul>
+    </form>
+    <script src="js/main.js" type="module"></script>
+</body>
+
+</html>

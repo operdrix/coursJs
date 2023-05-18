@@ -1,0 +1,41 @@
+body {
+  min-height: calc(100vh - 100px);
+  margin: 0;
+  background: url(https://audreyhossepian.fr/img/logo.png),
+    linear-gradient(40deg, #fc466b, #3f5efb);
+  background-position: 95% 90%;
+  background-repeat: no-repeat;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 50px;
+  color: white;
+}
+
+em {
+  color: rgb(255, 230, 0);
+  font-weight: bold;
+}
+
+.photo-list {
+  /* structure */
+  padding-left: 0;
+  width: 800px;
+
+  /* presentation */
+  list-style-type: none;
+}
+.photo-list li {
+  /* structure */
+  display: inline-block;
+  margin: 1em;
+  padding: 0.5em;
+
+  /* presentation */
+  border-radius: 8px;
+  transition: background-color 0.5s;
+}
+.photo-list li:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.photo-list li.selected {
+  background-color: #46b9fc;
+}

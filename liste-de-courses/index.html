@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Liste de Courses</h1>
+
+    <form id="formAdd" action="">
+        <input type="text" placeholder="aliment..." id="toAdd">
+        <input type="button" value="Ajouter" id="submit">
+    </form>
+
+    <section>
+        <h2>Liste de course : </h2>
+        <ul class="list">
+        </ul>
+        <button id="deleteOne">🗑 Supprimer 1 aliment</button>
+        <button id="delete">🗑 Vider</button>
+    </section>
+
+    <section id="popup" class="hide">
+        <h3>Supprimer un aliment <span title="annuler" id="cancel">❌</span></h3>
+        <form id="formDelete" action="">
+            <input type="text" placeholder="aliment à supprimer..." id="toDelete">
+            <input type="button" value="Supprimer" id="btnDelete">
+        </form>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

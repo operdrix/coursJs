@@ -1,0 +1,33 @@
+body {
+  min-height: calc(100vh - 100px);
+  margin: 0;
+  background: url(https://audreyhossepian.fr/img/logo.png),
+    linear-gradient(40deg, #fc466b, #3f5efb);
+  background-position: 95% 90%;
+  background-repeat: no-repeat;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 50px;
+  color: white;
+}
+
+.hide {
+  display: none;
+}
+
+.rectangle {
+  /* structure */
+  height: 300px;
+  width: 400px;
+
+  /* presentation */
+  border: 2px solid white;
+  background-color: #3f5efb;
+  border-radius: 8px;
+  transition: background-color 0.8s;
+}
+.rectangle.important {
+  background-color: #fc466b;
+}
+.rectangle.important.good {
+  background-color: bisque;
+}

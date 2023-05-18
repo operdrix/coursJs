@@ -1,0 +1,80 @@
+body {
+  min-height: calc(100vh - 100px);
+  margin: 0;
+  background: url(https://audreyhossepian.fr/img/logo.png),
+    linear-gradient(40deg, #fc466b, #3f5efb);
+  background-position: 95% 90%;
+  background-repeat: no-repeat;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 50px;
+  color: white;
+}
+
+.hide {
+  display: none;
+}
+#choix {
+  text-align: center;
+  margin-top: 50px;
+}
+#choix div {
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="number"] {
+  font-size: 3rem;
+  height: 150px;
+  width: 150px;
+  text-align: center;
+  border-radius: 100px;
+  border: none;
+  border: 5px solid #46b9fc;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.239);
+}
+
+#complementaire {
+  border: 5px solid #fc466b;
+}
+
+.warning {
+  border: 5px solid rgb(255, 230, 0) !important;
+}
+
+button {
+  margin-top: 50px;
+  padding: 20px 30px;
+  font-size: 2rem;
+}
+#result > * {
+  margin: 50px auto;
+}
+#result .generate {
+  display: flex;
+  justify-content: space-between;
+}
+#result .generate span {
+  border-radius: 100px;
+  font-size: 2rem;
+  background: beige;
+  color: black;
+  height: 150px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.complementaire {
+  background: rgb(235, 245, 220) !important;
+  border: 2px solid white;
+}
+.win {
+  background: greenyellow !important;
+}
+#result h3 {
+  margin-top: 10px;
+  border: 2px solid white;
+  padding: 20px;
+  display: inline-block;
+  font-size: 40px;
+}

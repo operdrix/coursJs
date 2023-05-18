@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Page builder</h1>
+        <p>En cliquant sur les bouton, le JS va générer des balises HTML que nous pourrons directement éditer dans la
+            page.</p>
+    </header>
+
+    <main>
+        <aside>
+            <h2>Ajouter un élément :</h2>
+            <button id="h1" data-placeholder="Saisir le titre principal"><i class="fas fa-heading"></i>Titre
+                principal</button>
+            <button id="h2" data-placeholder="Saisir le sous-titre de niveau 2"><i class="fas fa-heading"></i>Titre
+                niveau 2</button>
+            <button id="h3" data-placeholder="Saisir le sous-titre de niveau 3"><i class="fas fa-heading"></i>Titre
+                niveau 3</button>
+            <button id="p" data-placeholder="Saisir le paragraphe de texte"><i class="fas fa-paragraph"></i>Paragraphe
+                de texte</button>
+            <button id="hr"><i class="fas fa-grip-lines"></i>Séparateur</button>
+        </aside>
+        <h2>Contenu généré :</h2>
+        <article id="content"></article>
+        <button id="export"><i class="fas fa-code"></i>Exporter le HTML</button>
+    </main>
+
+    <section id="popup" class="hide">
+    </section>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
