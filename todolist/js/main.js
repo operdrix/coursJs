@@ -11,12 +11,20 @@ const taskDetail = document.querySelector("#task-details")
 let taskList = []
 let currentIndex = -1
 
+// Evénements
+window.addEventListener("load", refreshTaskList)
+btnAdd.addEventListener("click", () => {
+  form.setAttribute("data-mode", "add")
+  openForm()
+})
+btnClear.addEventListener("click", clearTodoList)
+form.addEventListener("submit", saveTask)
+
 /**
  * Rafraichit la liste des tâches
  * @returns {void}
  * @description Récupère la liste des tâches dans le localStorage, les affiche dans la section #todo
  */
-// Affiche la liste de tâches
 function refreshTaskList() {
   currentIndex = -1
   const ul = document.querySelector("#todo > ul")
@@ -142,13 +150,3 @@ function clearTodoList() {
     refreshTaskList()
   }
 }
-
-// Evénements
-btnAdd.addEventListener("click", () => {
-  form.setAttribute("data-mode", "add")
-  openForm()
-})
-btnClear.addEventListener("click", clearTodoList)
-form.addEventListener("submit", saveTask)
-
-refreshTaskList()
