@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Exercice AJAX</h1>
+    </header>
+
+    <main>
+        <section id="target">
+            <em>Résultats...</em>
+        </section>
+
+        <form>
+            <fieldset>
+                <legend>Votre choix</legend>
+                <ul>
+                    <li>
+                        <input type="radio" name="what" value="1" id="get-html-data" checked>
+                        <label for="get-html-data">Récupérer un contenu HTML du serveur</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="what" value="2" id="get-json-data">
+                        <label for="get-json-data">Récupérer un contenu JSON du serveur</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="what" value="3" id="get-html-movies">
+                        <label for="get-html-movies">Récupérer les films</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="what" value="4" id="get-json-movies">
+                        <label for="get-json-movies">Récupérer les films en JSON</label>
+                    </li>
+                    <li>
+                        <button type="button" id="run">Exécuter</button>
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+    </main>
+    <!-- Code principal du projet -->
+    <script src="main.js"></script>
+</body>
+
+</html>
