@@ -6,19 +6,19 @@ const result = document.querySelector('#target')
 btnRun.addEventListener('click', submitForm)
 
 function submitForm() {
-  const what = form.querySelector('input[name=what]:checked').value
+  const what = parseInt(form.querySelector('input[name=what]:checked').value)
   let file = ''
   switch (what) {
-    case '1':
+    case 1:
       file = 'data/1-get-html-article.html'
       break
-    case '2':
+    case 2:
       file = 'data/2-get-contacts-list.json'
       break
-    case '3':
+    case 3:
       file = 'data/3-get-html-movies.html'
       break
-    case '4':
+    case 4:
       file = 'data/4-get-json-movies.json'
       break
     default:
